@@ -1,6 +1,13 @@
+import Cards from '@/components/Cards'
+import Navbar from '@/components/Navbar'
+import NavMain from '@/components/NavMain'
 function page() {
   return (
-    <div>page</div>
+    <div>
+      <Navbar />
+      <NavMain />
+      <Cards />
+    </div>
   )
 }
 
