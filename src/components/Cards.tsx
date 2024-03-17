@@ -2,7 +2,8 @@ import Image from "next/image";
 
 function Cards() {
   return (
-    <div className="container flex gap-[30px] flex-wrap justify-center items-center">
+    <div>
+      <div className="container flex gap-[30px] flex-wrap justify-center items-center mb-[18px]">
       <div className="px-[17px] shadow-xl w-[370px] pb-[22px] bg-white">
         <Image
           className="min-w-[370px] ml-[-17.5px] mb-[6px]"
@@ -524,6 +525,22 @@ function Cards() {
           </button>
         </div>
       </div>
+    </div>
+    <div className="flex items-center justify-between mx-[70px] mt-[-68px]">
+      <Image src={'/parametr.svg'} alt="parametr-svg" width={60} height={60} />
+      <Image src={'/up.svg'} alt="parametr-svg" width={60} height={60} />
+    </div>
+    <div className="container flex items-center justify-between">
+   <div className="flex items-center">
+   <p className="text-[19px] text-black mx-[17px] opacity-65">Показать на странице:</p>
+    <span className="text-[#458BD1] ml-[-10px] flex items-center gap-[3px]">12 <Image src={'/bottom-y.svg'} alt="parametr-svg" width={10} height={15}/></span>
+   </div>
+   <Image className="cursor-pointer" src={'/carusel.svg'} alt="carusel-svg" width={272} height={26}/>
+   <div className="flex items-center mr-[17px]">
+   <p className="text-[19px] text-black mx-[17px] opacity-65">Найдено результатов:</p>
+    <span className="text-[#458BD1] ml-[-10px]">285</span>
+   </div>
+    </div>
     </div>
   );
 }
